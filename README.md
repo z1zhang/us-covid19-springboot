@@ -25,3 +25,5 @@ Spark SQL 数据分析
 后端使用Spring Boot + MyBatis Plus（MyBatis Plus也只是导了包，但没用上，因为全是查询）
 
 仓库地址：[https://github.com/z1zhang/us-covid19-springboot](https://github.com/z1zhang/us-covid19-springboot)
+
+**欢迎Fork本项目**
