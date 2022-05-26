@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/uscovid19
+    username: uscovid19
+    password: zhang
+mybatis-plus:
+  global-config:
+    #取消banner打印
+    banner: false
+  configuration:
+    #控制台打印完整带参数SQL语句
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #mapper映射文件路径
+  mapper-locations: mapper/**.xml

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.mapper.ChartMapper">
+    <select id="dayCasesDeaths" resultType="com.demo.domain.entity.DatesCasesDeaths">
+        select *
+        from day_cases_deaths
+    </select>
+    <select id="dayAddCases" resultType="com.demo.domain.entity.DatesVariation">
+        select *
+        from day_add_cases
+    </select>
+    <select id="dayAddDeaths" resultType="com.demo.domain.entity.DatesVariation">
+        select *
+        from day_add_deaths
+    </select>
+    <select id="stateCasesDeaths" resultType="com.demo.domain.entity.StatesCasesDeaths">
+        select *
+        from state_cases_deaths
+    </select>
+    <select id="top10Cases" resultType="com.demo.domain.entity.StatesCasesDeaths">
+        select *
+        from top10_cases
+    </select>
+    <select id="top10Deaths" resultType="com.demo.domain.entity.StatesCasesDeaths">
+        select *
+        from top10_deaths
+    </select>
+    <select id="top10LeastCases" resultType="com.demo.domain.entity.StatesCasesDeaths">
+        select *
+        from top10_least_cases
+    </select>
+    <select id="top10LeastDeaths" resultType="com.demo.domain.entity.StatesCasesDeaths">
+        select *
+        from top10_least_deaths
+    </select>
+    <select id="top10DeathRate" resultType="com.demo.domain.entity.DeathRate">
+        select *
+        from top10_rate
+    </select>
+    <select id="deathRate" resultType="com.demo.domain.entity.DeathRate">
+        select *
+        from death_rate
+    </select>
+    <select id="countyCasesDeaths" resultType="com.demo.domain.entity.CountyCasesDeaths">
+        select *
+        from county_cases_deaths
+        where state = #{state}
+    </select>
+</mapper>
