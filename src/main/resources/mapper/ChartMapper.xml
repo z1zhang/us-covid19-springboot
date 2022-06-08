@@ -5,13 +5,9 @@
         select *
         from day_cases_deaths
     </select>
-    <select id="dayAddCases" resultType="com.demo.domain.entity.DatesVariation">
+    <select id="dayAddCasesDeaths" resultType="com.demo.domain.entity.DatesVariation">
         select *
-        from day_add_cases
-    </select>
-    <select id="dayAddDeaths" resultType="com.demo.domain.entity.DatesVariation">
-        select *
-        from day_add_deaths
+        from day_add_cases_deaths
     </select>
     <select id="stateCasesDeaths" resultType="com.demo.domain.entity.StatesCasesDeaths">
         select *

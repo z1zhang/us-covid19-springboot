@@ -27,22 +27,12 @@ public class ChartController {
     }
 
     @ResponseBody
-    @RequestMapping(value = "/dayAddCases", method = RequestMethod.POST)
-    public RestResponse dayAddCases() {
+    @RequestMapping(value = "/dayAddCasesDeaths", method = RequestMethod.POST)
+    public RestResponse dayAddCasesDeathsDeaths() {
         RestResponse restResponse = new RestResponse();
         restResponse.setStatus(200);
         restResponse.setMessage("success");
-        restResponse.setData(chartService.dayAddCases());
-        return restResponse;
-    }
-
-    @ResponseBody
-    @RequestMapping(value = "/dayAddDeaths", method = RequestMethod.POST)
-    public RestResponse dayAddDeaths() {
-        RestResponse restResponse = new RestResponse();
-        restResponse.setStatus(200);
-        restResponse.setMessage("success");
-        restResponse.setData(chartService.dayAddDeaths());
+        restResponse.setData(chartService.dayAddCasesDeaths());
         return restResponse;
     }
 
@@ -127,7 +117,6 @@ public class ChartController {
             state = state.replace("=", "");
         }
         RestResponse restResponse = new RestResponse();
-        System.out.println("前端传来了" + state);
         restResponse.setStatus(200);
         restResponse.setMessage("success");
         restResponse.setData(chartService.countyCasesDeaths(state));

@@ -61,13 +61,8 @@ public class ChartServiceImpl implements ChartService, ChartMapper {
 
 
     @Override
-    public List<DatesVariation> dayAddCases() {
-        return chartMapper.dayAddCases();
-    }
-
-    @Override
-    public List<DatesVariation> dayAddDeaths() {
-        return chartMapper.dayAddDeaths();
+    public List<DatesVariation> dayAddCasesDeaths() {
+        return chartMapper.dayAddCasesDeaths();
     }
 
     public List<CountyCasesDeaths> countyCasesDeaths(String state) {

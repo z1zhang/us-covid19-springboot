@@ -19,18 +19,11 @@ public interface ChartService {
     List<DatesCasesDeaths> dayCasesDeaths();
 
     /**
-     * 每日新增确诊人数
+     * 每日新增
      *
-     * @return DayAddCases
+     * @return DayAdd
      */
-    List<DatesVariation> dayAddCases();
-
-    /**
-     * 每日新增死亡人数
-     *
-     * @return DayAddDeaths
-     */
-    List<DatesVariation> dayAddDeaths();
+    List<DatesVariation> dayAddCasesDeaths();
 
     /**
      * 美国每个州的累计确诊人数和死亡人数
@@ -80,7 +73,6 @@ public interface ChartService {
      * @return DeathRate
      */
     List<DeathRate> deathRate();
-
 
     /**
      * 各县数据

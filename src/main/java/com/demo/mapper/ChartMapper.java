@@ -22,16 +22,9 @@ public interface ChartMapper {
     /**
      * 每日新增确诊人数
      *
-     * @return DayAddCases
+     * @return dayAddCasesDeaths
      */
-    List<DatesVariation> dayAddCases();
-
-    /**
-     * 每日新增死亡人数
-     *
-     * @return DayAddDeaths
-     */
-    List<DatesVariation> dayAddDeaths();
+    List<DatesVariation> dayAddCasesDeaths();
 
     /**
      * 美国每个州的累计确诊人数和死亡人数

@@ -8,7 +8,8 @@ public class DatesVariation {
     private String date;
     private Integer cases;
     private Integer deaths;
-    private Integer variation;
+    private Integer casesVariation;
+    private Integer deathsVariation;
 
     public String getDate() {
         return date;
@@ -26,19 +27,27 @@ public class DatesVariation {
         this.cases = cases;
     }
 
-    public Integer getVariation() {
-        return variation;
-    }
-
-    public void setVariation(Integer variation) {
-        this.variation = variation;
-    }
-
     public Integer getDeaths() {
         return deaths;
     }
 
     public void setDeaths(Integer deaths) {
         this.deaths = deaths;
+    }
+
+    public Integer getCasesVariation() {
+        return casesVariation;
+    }
+
+    public void setCasesVariation(Integer casesVariation) {
+        this.casesVariation = casesVariation;
+    }
+
+    public Integer getDeathsVariation() {
+        return deathsVariation;
+    }
+
+    public void setDeathsVariation(Integer deathsVariation) {
+        this.deathsVariation = deathsVariation;
     }
 }
