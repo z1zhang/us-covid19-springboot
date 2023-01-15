@@ -39,7 +39,7 @@
     </select>
     <select id="countyCasesDeaths" resultType="com.demo.domain.entity.CountyCasesDeaths">
         select *
-        from county_cases_deaths
+        from us_county
         where state = #{state}
     </select>
 </mapper>
